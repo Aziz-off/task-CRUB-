@@ -1,61 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="./css/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
-</head>
-<body>
-	<div class="container">
-		<div class="title">
-			<img src="./images/icon_main.png" alt="phone">
-			<h1>My<span>Phone</span>Book</h1>
-		</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <img src="./images/icon_main.png" alt="phone" />
+        <h1>My<span>Phone</span>Book</h1>
+      </div>
 
-		<div class="search">
-			<img src="./images/icon_search.png" alt="">
-			<input type="text" placeholder="Search a contact...">
-		</div>
+      <div class="search">
+        <img src="./images/icon_search.png" alt="" />
+        <input type="text" placeholder="Search a contact..." />
+      </div>
 
-		<div class="add_contact">
-			<button class="btn_add">+ add new contact</button>
-		</div>
+      <div class="add_contact">
+        <button class="btn_add">+ add new contact</button>
+      </div>
 
-		<div class="open_modal">
-			<div class="input_data">
-				<input id="inp_name" type="text" placeholder="Введите имя">
-				<input id="inp_phoneNum" type="number" placeholder="Введите номер телефона">
-			</div>
-			<div class="submit_data">
-				<button class="btn_save" type="submit">save contact</button>
-				<button class="btn_cansel">cansel</button>
-			</div>
-		</div>
+      <div class="open_modal">
+        <div class="input_data">
+          <input id="inp_name" type="text" placeholder="Введите имя" />
+          <input
+            id="inp_phoneNum"
+            type="number"
+            placeholder="Введите номер телефона"
+          />
+          <input
+            id="inp_imageLink"
+            type="text"
+            placeholder="Вставьте картинку (ссылка)"
+          />
+        </div>
+        <div class="submit_data">
+          <button class="btn_save" type="submit">save contact</button>
+          <button class="btn_cansel">cancel</button>
+        </div>
+      </div>
 
-		<div class="my_contacts">
-			<ul class="contact-list"></ul>
-		</div>
+      <div class="my_contacts">
+        <ul class="contact-list"></ul>
+      </div>
 
-
-
-		<div class="main-modal">
-			<div class="inner-modal">
-				<div class="close">
-					<button class="btn-close">X</button>
-				</div>
-	
-				<input type="text" class="inp-edit-name">
-				<input type="number" class="inp-edit-phone">
-				<button class="btn-save">SAVE</button>
-			</div>
-		</div>
-
-	</div>
-	<script src="./js/main.js"></script>
-
-</body>
+      <div class="main-modal">
+        <div class="inner-modal">
+          <div class="close">
+            <button class="btn-close">X</button>
+          </div>
+          <div class="change_inp">
+            <input type="text" class="inp-edit-name" placeholder="Введите имя"/>
+            <input type="number" class="inp-edit-phone" placeholder="Введите номер"/>
+            <input type="text" class="inp-edit-imageLink" placeholder="Вставьте картинку"/>
+          </div>
+          <button class="btn-save">SAVE</button>
+        </div>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
